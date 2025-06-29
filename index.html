@@ -12,6 +12,60 @@
       color: #111;
     }
 
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 24px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .header .left, .header .right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .header .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .header a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+    }
+
+    .search-bar {
+      background-color: #f3f3f3;
+      padding: 6px 12px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .search-bar input {
+      border: none;
+      background: none;
+      outline: none;
+      width: 200px;
+    }
+
+    .circle {
+      background-color: #f3f3f3;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    /* Content */
     .content {
       max-width: 700px;
       margin: 40px auto;
@@ -47,6 +101,28 @@
 
 <body>
 
+  <!-- Header -->
+  <div class="header">
+    <div class="left">
+      <div class="logo">YouVersion</div>
+      <a href="#">Bible</a>
+      <a href="#">Plans</a>
+      <a href="#">Videos</a>
+    </div>
+    <div class="center">
+      <div class="search-bar">
+        🔍 <input type="text" placeholder="Search Bible.com">
+      </div>
+    </div>
+    <div class="right">
+      <a href="#">Get the app</a>
+      <div class="circle">🌐</div>
+      <div class="circle">☰</div>
+      <div class="circle">👤</div>
+    </div>
+  </div>
+
+  <!-- Content -->
   <div class="content">
     <div class="book-title">JOHN 1</div>
     <div class="section-title">The Word Became Flesh</div>

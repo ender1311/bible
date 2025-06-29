@@ -12,53 +12,11 @@
       color: #111;
     }
 
-    /* Header */
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 12px 24px;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .header .left, .header .right {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .header .logo {
-      font-weight: bold;
-      font-size: 1.2rem;
-    }
-
-    .header a {
-      text-decoration: none;
-      color: #111;
-      font-weight: 500;
-    }
-
-    .search-bar {
-      background-color: #f3f3f3;
-      padding: 6px 12px;
-      border-radius: 999px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .search-bar input {
-      border: none;
-      background: none;
-      outline: none;
-      width: 200px;
-    }
-
-    /* Content */
     .content {
       max-width: 700px;
       margin: 40px auto;
-      padding: 0 20px;
+      padding: 0 24px;
+      line-height: 1.8;
     }
 
     .book-title {
@@ -74,68 +32,40 @@
       font-size: 1.2rem;
     }
 
-    .verse {
-      margin: 8px 0;
-      line-height: 1.6;
+    .verse-text {
+      text-align: justify;
     }
 
-    .verse span {
+    .verse {
       vertical-align: super;
       font-size: 0.7em;
       color: #666;
-    }
-
-    /* Icons */
-    .circle {
-      background-color: #f3f3f3;
-      border-radius: 50%;
-      width: 32px;
-      height: 32px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
+      margin-right: 2px;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- Header -->
-  <div class="header">
-    <div class="left">
-      <div class="logo">YouVersion</div>
-      <a href="#">Bible</a>
-      <a href="#">Plans</a>
-      <a href="#">Videos</a>
-    </div>
-    <div class="center">
-      <div class="search-bar">
-        🔍 <input type="text" placeholder="Search Bible.com">
-      </div>
-    </div>
-    <div class="right">
-      <a href="#">Get the app</a>
-      <div class="circle">🌐</div>
-      <div class="circle">☰</div>
-      <div class="circle">👤</div>
-    </div>
-  </div>
-
-  <!-- Content -->
   <div class="content">
     <div class="book-title">JOHN 1</div>
     <div class="section-title">The Word Became Flesh</div>
 
-    <div class="verse"><span>1</span> In the beginning was the Word, and the Word was with God, and the Word was God.</div>
-    <div class="verse"><span>2</span> He was with God in the beginning.</div>
-    <div class="verse"><span>3</span> Through him all things were made; without him nothing was made that has been made.</div>
-    <div class="verse"><span>4</span> In him was life, and that life was the light of all mankind.</div>
-    <div class="verse"><span>5</span> The light shines in the darkness, and the darkness has not overcome it.</div>
-    <div class="verse"><span>6</span> There was a man sent from God whose name was John.</div>
-    <div class="verse"><span>7</span> He came as a witness to testify concerning that light, so that through him all might believe.</div>
-    <div class="verse"><span>8</span> He himself was not the light; he came only as a witness to the light.</div>
-
+    <div class="verse-text">
+      <span class="verse">1</span>In the beginning was the Word, and the Word was with God, and the Word was God.
+      <span class="verse">2</span>He was with God in the beginning.
+      <span class="verse">3</span>Through him all things were made; without him nothing was made that has been made.
+      <span class="verse">4</span>In him was life, and that life was the light of all mankind.
+      <span class="verse">5</span>The light shines in the darkness, and the darkness has not overcome it.
+      <span class="verse">6</span>There was a man sent from God whose name was John.
+      <span class="verse">7</span>He came as a witness to testify concerning that light, so that through him all might believe.
+      <span class="verse">8</span>He himself was not the light; he came only as a witness to the light.
+      <span class="verse">9</span>The true light that gives light to everyone was coming into the world.
+      <span class="verse">10</span>He was in the world, and though the world was made through him, the world did not recognize him.
+      <span class="verse">11</span>He came to that which was his own, but his own did not receive him.
+      <span class="verse">12</span>Yet to all who did receive him, to those who believed in his name, he gave the right to become children of God—
+      <span class="verse">13</span>children born not of natural descent, nor of human decision or a husband’s will, but born of God.
+    </div>
   </div>
 
 </body>

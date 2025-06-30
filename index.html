@@ -96,6 +96,49 @@
       color: #666;
       margin-right: 2px;
     }
+
+    
+  /* ✅ Responsive adjustments */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 12px;
+    }
+
+    .header .left,
+    .header .right {
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .search-bar {
+      max-width: 100%;
+    }
+
+    .content {
+      margin: 24px auto;
+      padding: 0 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .header .logo {
+      font-size: 1rem;
+    }
+
+    .header a {
+      font-size: 0.9rem;
+    }
+
+    .section-title {
+      font-size: 1.05rem;
+    }
+
+    .verse-text {
+      font-size: 0.95rem;
+    }
+  }
   </style>
   
     <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js" defer></script>
